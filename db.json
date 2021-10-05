@@ -1,0 +1,57 @@
+{
+    "productItems": [
+        {
+            "id": "1",
+            "name": "Beats Headphone",
+            "price": 8300,
+            "image": "https://i4.stat01.com/2/1785/117849316/075a3e/naushniki-apple-beats-solo-3-vintazhno-zheltyj.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
+        },
+        {
+            "id": "2",
+            "name": "Sennheiser Headphone",
+            "price": 6670,
+            "image": "https://items-advert.s1.citilink.ru/1214724_f_01.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+        },
+        {
+            "id": "3",
+            "name": "Sony Headphone",
+            "price": 9150,
+            "image": "https://items-advert.s1.citilink.ru/1194431_f_01.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
+        },
+        {
+            "id": "4",
+            "name": "Philips Headphone",
+            "price": 5450,
+            "image": "https://img.telemart.ua/84332-361309-product_popup/philips-shl5005wt00-white.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
+        },
+        {
+            "id": "5",
+            "name": "Sven Headphone",
+            "price": 1200,
+            "image": "https://cdn1.ozone.ru/s3/multimedia-s/c500/6024890500.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
+        },
+        {
+            "id": "6",
+            "name": "Pioneer Headphone",
+            "price": 1200,
+            "image": "https://musicprofi.com/files/products/20170925191748.500x500.jpg",
+            "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
+        },
+        {
+            "id": "7",
+            "name": "JBL Headphone",
+            "price": 154566750,
+            "image": "https://cdn2.from.ae/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/0/1/01_171_52.jpg"
+        }
+    ]
+}
