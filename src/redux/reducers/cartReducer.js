@@ -45,6 +45,14 @@ export const cartReducer = (state = initialState, action) => {
                 itemsInCart: action.payload.newItemsInCart,
                 commonPrice: action.payload.commonPrice
             }
+        case types.MINUS_ITEM:
+            return{
+                ...state,
+                //{itemsInCart, commonPrice}
+                itemsInCart: action.payload.itemsInCart,
+                commonPrice: action.payload.commonPrice
+                
+            }
         default:
             return state
     }

@@ -68,22 +68,49 @@ export const deleteItemFromCart = (item, itemsInCart, commonPrice) => {
         
     }
 }
-// export const minusItemFromCart = (item, itemsInCart, commonPrice) => {
+export const minusItemFromCart = (item, itemsInCart, commonPrice) => {
 
+    debugger
+    
+    let newItemsCart;
+    let itemForChange = itemsInCart.filter((i) => i.id === item.id)[0];
+    if (itemForChange.quantity > 1) {
+        itemForChange.quantity = Number(itemForChange.quantity - 1);
+        
+    }else if (itemForChange.quantity == 1){
+        debugger
+        newItemsCart = itemsInCart.filter((item) => item.id !== itemForChange.id);
+        itemsInCart = newItemsCart
+    }
+    commonPrice -= item.price
+    return{
+        type: types.MINUS_ITEM,
+        payload: {itemsInCart, commonPrice}
+    }
 
-//     let newItemsInCart = itemsInCart.filter((i) => i.id !== item.id);
+}
+export const plusItemFromCart = (item, itemsInCart, commonPrice) => {
 
-//     let itemForChange = itemsInCart.filter((i) => i.id === item.id);
-//     itemForChange.quntity = itemForChange.quntity - 1;
+    debugger
+    
+    let itemForChange = itemsInCart.filter((i) => i.id === item.id)[0];
+    // if (itemForChange.quantity > 1) {
+    //     itemForChange.quantity = Number(itemForChange.quantity + 1);
+        
+    // }
+    // else if (itemForChange.quantity == 1){
+    //     debugger
+    //     newItemsCart = itemsInCart.filter((item) => item.id !== itemForChange.id);
+    //     itemsInCart = newItemsCart
+    // }
+    itemForChange.quantity = Number(itemForChange.quantity + 1);
+    commonPrice += item.price
+    return{
+        type: types.MINUS_ITEM,
+        payload: {itemsInCart, commonPrice}
+    }
 
-
-//     commonPrice -= item.price
-//     return{
-//         type: types.MINUS_ITEM,
-//         payload: 
-//     }
-
-// }
+}
 
 export const setCommonPrice = (commonPrice) => {
     return{

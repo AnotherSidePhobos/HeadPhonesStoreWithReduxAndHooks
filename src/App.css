@@ -53,7 +53,7 @@ Link{
   padding: 20px;
 }
 .items-cart-count,
-.commonPriceInHeader{
+.common-price-in-header{
   font-size: large;
   margin-left: 6px;
 }
@@ -62,4 +62,21 @@ Link{
 }
 .Get-connected{
   text-align: center;
+}
+.cart-items h3{
+  text-align: center;
+}
+.wrapper{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+footer{
+  margin-top: auto;
+}
+.delete__btn{
+  min-width: 100px;
+  margin-right: -50px;
 }

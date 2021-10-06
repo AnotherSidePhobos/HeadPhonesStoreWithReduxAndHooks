@@ -8,10 +8,12 @@ import Cart from './components/Cart/Cart';
 import Signup from './components/Signup/Signup';
 import ProductItem from './components/ProductItem/ProductItem';
 import Footer from './components/Footer/Footer';
+import ContactUs from './components/ContactUs/ContactUs';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   return (
-    <div className="app">
+    <div className="wrapper">
         <Header/>
         <br/>
         <div className='container'>
@@ -20,6 +22,8 @@ function App() {
               <Route path='/productItem/:id' component={ProductItem}/>
               <Route path='/signup' exact component={Signup}></Route>
               <Route path='/cart' component={Cart}></Route>
+              <Route path='/countactus' exact component={ContactUs}></Route>
+              <Route path='/aboutus' exact component={AboutUs}></Route>
             </Switch>
         </div>
         <Footer/>

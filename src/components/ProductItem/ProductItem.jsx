@@ -40,7 +40,7 @@ const ProductItem = (props) => {
             </div>
             <div className='product-info'>
                 <h2>{obj.name}</h2>
-                <h4>Price: <strong>{obj.price}</strong></h4>
+                <h4>Price: <strong>{new Intl.NumberFormat().format(obj.price)}</strong></h4>
                 <div className='descItems'>
                     {!obj.description && <div>no description</div>}
                     {obj.description && <div>{obj.description}</div>}

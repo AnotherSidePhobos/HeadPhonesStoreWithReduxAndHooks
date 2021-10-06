@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import {BsCart4} from 'react-icons/bs';
+import {BsCartFill} from 'react-icons/bs';
 import {useSelector} from 'react-redux';
 import { useDispatch } from 'react-redux';
 import {updateSearchField} from './../../redux/actions';
@@ -23,6 +23,15 @@ const Header = () => {
         dispatch(updateSearchField(e.target.value));
         dispatch(fetchItemsBySearch(allItems, serchTerm));
     }
+
+
+    const commonAmount = () => {
+        let comAmount = 0;
+        itemsInCart.map((item) => (
+            comAmount += item.quantity
+        ))
+        return comAmount;
+    }
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <div className='container'>
@@ -38,7 +47,9 @@ const Header = () => {
                     <Link  to='/' className="nav-link">Home <span className="sr-only"></span></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to='/cart' className="nav-link"><span className='items-cart-count'>{itemsInCart.length}</span><BsCart4/><span className='commonPriceInHeader'>{new Intl.NumberFormat().format(commonPrice)}</span></Link>
+                    <Link to='/cart' className="nav-link"><span className='items-cart-count'>{commonAmount() ? commonAmount() + ' pcs.' : ''}</span>
+                    <BsCartFill/>
+                    <span className='common-price-in-header'>{ commonPrice ? new Intl.NumberFormat().format(commonPrice) + ' RUB' : '' }</span></Link>
                 </li>
                 </ul>
             </div>
