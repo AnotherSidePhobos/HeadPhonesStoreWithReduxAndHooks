@@ -2,10 +2,9 @@ import axios from 'axios';
 import { useSelector } from 'react-redux';
 import * as types from './actionsTypes';
 
-export const fetchAllItems = () =>{
-    debugger
+export const fetchAllItems = (currentPage, pageSize) =>{
     return async dispatch =>{
-        const res = await fetch(`http://localhost:3002/productItems`)
+        const res = await fetch(`http://localhost:3002/productItems?_page=${currentPage}&_limit=${pageSize}`)
         const jsonData = await res.json();
         dispatch({
             type: types.FETCH_ALL_ITEMS,
@@ -13,6 +12,20 @@ export const fetchAllItems = () =>{
         })
     }
 }
+export const setAllItemsCount = () =>{
+    debugger
+
+
+    return async dispatch =>{
+        const res = await fetch(`http://localhost:3002/productItems`)
+        const jsonData = await res.json();
+        dispatch({
+            type: types.SET_ALL_ITEMS_COUNT,
+            jsonData
+        })
+    }
+}
+
 export const fetchAllItemsSearch = (textSearh) =>{
     debugger
     return async dispatch =>{
@@ -32,6 +45,13 @@ export const updateSearchField = (searchTerm) => {
     return{
         type: types.UPDATE_SEARCH_FIELD,
         payload: searchTerm
+    }
+}
+export const setCurrentPage = (currentPage) => {
+    debugger
+    return{
+        type: types.SET_CURRENT_PAGE,
+        payload: currentPage
     }
 }
 

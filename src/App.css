@@ -13,11 +13,17 @@
 }
 .products{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: wrap;
 }
 .card{
+
   max-width: 22em;
+}
+.card:not(:last-child), .card:not(:first-child){
+  margin-left: 40px;
+  margin-right: 40px;
+
 }
 .signUpBtn{
   margin: 0px 10px;
@@ -79,4 +85,23 @@ footer{
 .delete__btn{
   min-width: 100px;
   margin-right: -50px;
+}
+.goods-page{
+  display: flex;
+  flex-direction: column;
+}
+.page-number{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page{
+  
+  cursor: pointer;
+}
+.active-page{
+  color: blue;
+}
+.pagination{
+  max-width: 300px;
+  margin: 0 auto;
 }
