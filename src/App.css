@@ -105,3 +105,21 @@ footer{
   max-width: 300px;
   margin: 0 auto;
 }
+.comment{
+  display: flex;
+  justify-content: space-around;
+}
+.existing-comments,
+.comment-title{
+  margin: 20px;
+
+}
+.comment-button{
+  margin-left: 20px;
+}
+.comment-input,
+.comment-textarea{
+  min-width: 260px;
+  margin: 20px;
+ 
+} 

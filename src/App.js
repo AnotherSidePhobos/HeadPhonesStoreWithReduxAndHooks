@@ -10,7 +10,6 @@ import ProductItem from './components/ProductItem/ProductItem';
 import Footer from './components/Footer/Footer';
 import ContactUs from './components/ContactUs/ContactUs';
 import AboutUs from './components/AboutUs/AboutUs';
-import Carusel from './components/Carusel/Carusel';
 
 function App() {
   return (

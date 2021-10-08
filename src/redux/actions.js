@@ -12,10 +12,9 @@ export const fetchAllItems = (currentPage, pageSize) =>{
         })
     }
 }
+
 export const setAllItemsCount = () =>{
     debugger
-
-
     return async dispatch =>{
         const res = await fetch(`http://localhost:3002/productItems`)
         const jsonData = await res.json();
