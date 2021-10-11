@@ -12,7 +12,7 @@ const Header = () => {
     const itemsInCart = useSelector(state => state.carts.itemsInCart)
     const commonPrice = useSelector(state => state.carts.commonPrice)
     const serchTerm = useSelector(state => state.products.searchFiled)
-    const allItems = useSelector(state => state.products.productsArr)
+    const allItemsExact = useSelector(state => state.products.exactlyAllProducts)
     const dispatch = useDispatch();
 
     const onChangeSearch = (e) =>{
@@ -20,7 +20,7 @@ const Header = () => {
             dispatch(fetchAllItems(1, 3))
         }
         dispatch(updateSearchField(e.target.value));
-        dispatch(fetchItemsBySearch(allItems, serchTerm));
+        dispatch(fetchItemsBySearch(allItemsExact, serchTerm));
     }
 
 

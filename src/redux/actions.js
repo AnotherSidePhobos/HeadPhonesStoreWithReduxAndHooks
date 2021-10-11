@@ -12,6 +12,16 @@ export const fetchAllItems = (currentPage, pageSize) =>{
         })
     }
 }
+export const fetchExactlyAllItems = () =>{
+    return async dispatch =>{
+        const res = await fetch(`http://localhost:3002/productItems`)
+        const jsonData = await res.json();
+        dispatch({
+            type: types.FETCH_EXACT_ALL_ITEMS,
+            payload: jsonData
+        })
+    }
+}
 
 export const setAllItemsCount = () =>{
     debugger
@@ -24,6 +34,36 @@ export const setAllItemsCount = () =>{
         })
     }
 }
+export const fetchProduct = (item) =>{
+    debugger
+    return{
+        type: types.FETCH_PRODUCT,
+        payload: item
+    }
+}
+export const updateInput = (inputText) =>{
+    debugger
+    return{
+        type: types.UPDATE_INPUT,
+        payload: inputText
+    }
+}
+export const addNewComment = (productId, nameCommentator, textComment, productsArr) =>{
+    debugger
+
+    return{
+        type: types.ADD_NEW_COMMENT,
+        payload: {productId, nameCommentator, textComment, productsArr}
+    }
+}
+export const updateTextarea = (textareaText) =>{
+    debugger
+    return{
+        type: types.UPDATE_TEXTAREA,
+        payload: textareaText
+    }
+}
+
 
 export const fetchAllItemsSearch = (textSearh) =>{
     debugger
@@ -66,7 +106,7 @@ export const fetchItemsBySearch = (items, searchTerm) => {
 }
 
 export const addItemInCart = (item, commonPrice, itemsInCart) => {
-    
+    debugger
     commonPrice += item.price;
     return{
         type: types.ADD_ITEM_IN_CART,
@@ -135,5 +175,30 @@ export const setCommonPrice = (commonPrice) => {
     return{
         type: types.SET_COMMON_PRICE,
         payload: commonPrice
+    }
+}
+
+
+export const changeRation = (product, rat, productArr) => {
+    debugger
+    if (!product.ratio) {
+        product.ratio = 0
+    }
+    product.ratio = Number(product.ratio + rat);
+
+    const NewList = productArr.map((o) => {
+        if (o.id == product.id) {
+            return product
+        }
+        return o;
+    });
+
+    debugger
+
+
+
+    return{
+        type: types.CHANGE_RATION,
+        payload: NewList
     }
 }

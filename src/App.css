@@ -107,7 +107,7 @@ footer{
 }
 .comment{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .existing-comments,
 .comment-title{
@@ -123,3 +123,38 @@ footer{
   margin: 20px;
  
 } 
+
+.exist-com{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid seagreen;
+  list-style-type: none;
+}
+
+.exist-com-title{
+  margin-left: 40px;
+}
+
+.existing-comments{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item-line{
+  border-top: 2px solid lightgray;
+  margin: 10px 0px;
+}
+.ration{
+  max-width: 300px;
+  margin: 0 auto;
+}
+.ration span{
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.ration span:hover{
+  
+}
+.ration-title{
+  padding-left: 30px;
+}

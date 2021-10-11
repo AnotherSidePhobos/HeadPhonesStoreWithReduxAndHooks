@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {useState, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchAllItems} from './../../redux/actions';
+import {fetchExactlyAllItems} from './../../redux/actions';
 import {addItemInCart} from './../../redux/actions';
 import {setCommonPrice} from './../../redux/actions';
 import Carusel from '../Carusel/Carusel';
@@ -21,6 +22,7 @@ function Products() {
 
     useEffect(() => {
         dispatch(fetchAllItems(currentPage, pageSize))
+        dispatch(fetchExactlyAllItems())
     }, [])
 
     const onAddBtnClick = (item) => {

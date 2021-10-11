@@ -6,6 +6,9 @@
             "price": 8300,
             "image": "https://i4.stat01.com/2/1785/117849316/075a3e/naushniki-apple-beats-solo-3-vintazhno-zheltyj.jpg",
             "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+            ,"comments": [
+                "норм", "Звук не очень", "сойдет", "Дорого, я б лучше джибиель взял в три раза дешевше" 
+            ]
 
         },
         {
@@ -14,6 +17,9 @@
             "price": 6670,
             "image": "https://items-advert.s1.citilink.ru/1214724_f_01.jpg",
             "description": "These Sennheiser Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+            ,"comments": [
+                "норм2", "Товар говно2", "Звук не очень2", "Дорого, я б лучше джибиель взял в три раза дешевше2" 
+            ]
         },
         {
             "id": "3",
@@ -52,6 +58,14 @@
             "name": "JBL Headphone",
             "price": 154566750,
             "image": "https://cdn2.from.ae/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/0/1/01_171_52.jpg"
+        },
+        {
+            "id": "8",
+            "name": "Sony 327 Headphone",
+            "price": 15000,
+            "image": "https://www.nbcomputers.ru/upload/resize_cache/files/product/500_500_1/WHCH510L.E_2.jpg",
+            "description": "These Sony Bluetooth headphones will help motivate you to complete various tasks with ease. They give you an engaging sound experience with their deep bass feature. Thanks to their long-lasting battery life and fast USB-C charging, you can enjoy using them for a long time without worrying about running out of charge."
+
         }
     ]
 }
